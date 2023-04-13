@@ -229,7 +229,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    min-height: 700px;
     max-width: 1440px;
     margin: 0 auto;
 }
