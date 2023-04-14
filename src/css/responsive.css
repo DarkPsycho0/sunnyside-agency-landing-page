@@ -21,7 +21,38 @@
 
 @media(max-width:425px) {
     .header nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+        top: 10%;
+        background-color: hsl(0, 0%, 100%);
+        width: 90%;
+    }
+    .header i.none{
+        display: block;
+    }
+    .header nav .none{
         display: none;
+    }
+    .header nav ul{
+        padding: 30px;
+    }
+    .header nav ul li{
+        color: hsl(232, 10%, 55%);
+    }
+    .header nav ul li:last-child {
+        background-color: hsl(51, 100%, 49%);
+        width: 200px;
+        margin: 0 auto;
+    }
+    .header .none{
+        display: block;
+    }
+    .hero h2{
+        font-size: 35px;
     }
     .about {
         grid-template-columns: 1fr;
@@ -65,5 +96,17 @@
 
     .client-testimonials .testimonials {
         flex-direction: column;
+    }
+}
+@media(max-width:375px){
+    .hero h2{
+        font-size: 25px;
+    }
+    .about .item h3 {
+        font-size: 30px;
+    }
+    .client-testimonials h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
     }
 }

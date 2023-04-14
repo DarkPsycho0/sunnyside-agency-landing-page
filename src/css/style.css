@@ -57,6 +57,13 @@
     color: hsl(0, 0%, 100%);
     transition: 0.3s ease-in-out;
 }
+.header i{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+.header i.none{
+    display: none;
+}
 
 .hero {
     grid-area: hero;
